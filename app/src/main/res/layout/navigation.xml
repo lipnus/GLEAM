@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_gravity="bottom"
+        android:alpha="0.8"/>
+
+    <!--네비게이션바-->
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/main_navi1"
+            android:onClick="onClick_navi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="13dp"/>
+
+        <ImageView
+            android:id="@+id/main_navi2"
+            android:onClick="onClick_navi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:padding="13dp"/>
+
+        <ImageView
+            android:id="@+id/main_navi3"
+            android:onClick="onClick_navi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:padding="13dp"/>
+
+        <ImageView
+            android:id="@+id/main_navi4"
+            android:onClick="onClick_navi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:padding="13dp"/>
+
+        <ImageView
+            android:id="@+id/main_navi5"
+            android:onClick="onClick_navi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:padding="13dp"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

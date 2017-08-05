@@ -2,6 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lipnus.gleam">
 
+    <uses-sdk android:minSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,13 +24,31 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".IntroActivity">
+
+            <!-- 인텐트필터1 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <!-- 인텐트필터2 -->
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <cateogry android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DetectActivity" />
+        <activity android:name=".InformationActivity" />
+        <activity android:name=".CompareActivity" />
+        <activity android:name=".MypageActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".MirrorActivity"></activity>
     </application>
 
 </manifest>

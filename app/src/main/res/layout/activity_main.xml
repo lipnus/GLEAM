@@ -16,54 +16,20 @@
             android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="80dp"
             android:background="#000000"/>
 
-        <!--네비게이션바-->
-        <LinearLayout
+        <include
             android:layout_gravity="bottom"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:background="#ffadad">
-
-            <Button
-                android:id="@+id/main_navi1"
-                android:onClick="onClick_navi1"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"/>
-
-            <Button
-                android:id="@+id/main_navi2"
-                android:onClick="onClick_navi1"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginRight="15dp"/>
-
-            <Button
-                android:id="@+id/main_navi3"
-                android:onClick="onClick_navi1"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginRight="15dp"/>
-
-            <Button
-                android:id="@+id/main_navi4"
-                android:onClick="onClick_navi1"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginRight="15dp"/>
+            android:layout_height="match_parent"
+            layout="@layout/navigation" />
+        </FrameLayout>
 
 
-
-        </LinearLayout>
-
-    </FrameLayout>
-
-
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     
 
 
